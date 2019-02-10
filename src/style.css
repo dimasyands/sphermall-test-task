@@ -1,0 +1,50 @@
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
+@font-face{
+  font-family: 'BasisGrotesquePro-Bold';
+  src: url('../src/fonts/BasisGrotesquePro-Bold.woff');
+}
+
+@font-face{
+  font-family: 'BasisGrotesquePro-Regular';
+  src: url('../src/fonts/BasisGrotesquePro-Regular.woff');
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  text-decoration: none;
+  background-color: unset;
+  padding: 0;
+  margin: 0;
+}
+
+.page {
+  margin: 0;
+  background-color: plum;
+  color: #000000;
+  font-family: BasisGrotesquePro-Regular;
+}
