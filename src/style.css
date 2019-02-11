@@ -449,7 +449,12 @@ footer {
 
 
 #popup {
+  display: none;
   position: fixed;
   top: calc(50% - 313px);
   left: calc(50% - 270px);
+}
+
+#popup.show-modal {
+  display: block;
 }
