@@ -9,22 +9,25 @@
 
 <body class="page">
   <header class="main-header">
-    <div class="main-wrapper">
-      <h1 class="visually-hidden">Griph - Your first partner</h1>
-      <button class="header-down-arrow">
+    <div class="main-header-gradient">
+    </div>
+    <div class="main-wrapper content-center">
+      <h1 class="visually-hidden">Griph &mdash; Your first partner</h1>
+      <a class="header-down-arrow" href="#startContent">
         <img src="src/img/arrow-down.png" alt="header-button">
-      </button>
+      </a>
       <section class="header-section-greet">
         <p>The first partner you’ll ever need. Your trust is our value.</p>
       </section>
     </div>
   </header>
-  <nav class="main-nav">
-    <a class="main-nav__logo" href="#">
+  <nav class="main-nav content-center">
+    <a class="main-nav-logo" href="#">
       <img src="src/img/logo_griph.png"
           srcset="
           src/img/mini_logo.png 600w,
           src/img/logo_griph.png 900w"
+          width="60px"
           alt="Main logo">
     </a>
     <ul class="main-nav-list">
@@ -49,53 +52,116 @@
     </ul>
   </nav>
 
-  <div class="section-wrapper">
-    <article class="what-can-do">
-      <h2>Griph is a collective of lawyers and tax specialists, almost all of whom are also entrepreneurs with
-          excellent business skills.
-      </h2>
-      <p>
-          Collectively, we represent years of experience and expertise from leading law firms and hands-on
-          business enterprises, bringing you the highest level
-          of service based on complete transparency,
-          commitment, and very short lines of communication.
-      </p>
-      <button class="what-can-do-popup-button">
-        <p>What can we do for you?</p>
-        <img src="src/img/arrow-rifgt.png" alt="arrow">
-      </button>
-    </article>
-    <section class="section-short-lines">
-      <h3>SHORT LINES</h3>
-      <p>At Griph, you always work directly with your own dedicated lawyer or tax
-          specialist, giving you complete control over the entire process. You always
-          have real-time insight into the progress of your case and can make adjustments
-          whenever necessary.
-      </p>
-    </section>
-    <section class="section-quality">
-      <h3>QUALITY</h3>
-      <p>All of our team members are seasoned professionals with in-depth expertise
-        in their particular fields, dedicated to providing high-quality services to
-        all our clients, including startups and leading national and international
-        businesses and investment funds. By combining the strengths of our specialized
-        teams and members and making optimum use of all our networks, we provide our clients
-        with integrated services of the highest possible quality.
-      </p>
-    </section>
-    <section class="section-team">
-      <h3>TEAM</h3>
-      <p>Different areas of expertise and backgrounds, but a single motivation:
-        to provide the best possible advice and representation in court and
-        out of court – committed, pragmatic, and effective.
-      </p>
-      <button class="meet-team-button" type="button">
-        <p>Meet our team</p>
-        <img src="src/img/arrow-rifgt.png" alt="arrow">
-      </button>
-    </section>
+  <div class="section-wrapper content-center">
+    <div class="section-container-wrapper">
+      <article class="what-can-do">
+        <h2 id="startContent" class="what-can-do-header">Griph is a collective of lawyers and tax specialists, almost all of whom are also entrepreneurs with
+            excellent business skills.
+        </h2>
+        <p class="what-can-do-content">
+            Collectively, we represent years of experience and expertise from leading law firms and hands-on
+            business enterprises, bringing you the highest level
+            of service based on complete transparency,
+            commitment, and very short lines of communication.
+        </p>
+        <button class="what-can-do-popup-button button">
+          <p>What can we do for you?</p>
+          <img src="src/img/arrow-rifgt.png" alt="arrow">
+        </button>
+      </article>
+      <div id="popup">
+        <div class="popup-wrapper">
+            <button class="popup-close"></button>
+            <p>What can we do for you?</p>
+            <form class="popup-form" action="">
+              <input type="name" name="name" placeholder="Name">
+              <input type="email" name="email" placeholder="Email" required>
+              <textarea name="Message" placeholder="Message"></textarea>
+              <button class="button popup-submit-button">
+                <p>Send</p>
+                <img src="src/img/arrow-rifgt.png" alt="arrow">
+              </button>
+            </form>
+        </div>
+      </div>
+      <section class="section-short-lines">
+        <div class="section-line"></div>
+        <h3>SHORT LINES</h3>
+        <p>At Griph, you always work directly with your own dedicated lawyer or tax
+            specialist, giving you complete control over the entire process. You always
+            have real-time insight into the progress of your case and can make adjustments
+            whenever necessary.
+        </p>
+        <hr>
+      </section>
+    </div>
+    <div class="section-container-wrapper section-container-wrapper-with-bg">
+      <section class="section-quality">
+        <div class="section-line"></div>
+        <h3>QUALITY</h3>
+        <p>All of our team members are seasoned professionals with in-depth expertise
+          in their particular fields, dedicated to pro&shyviding high-quality services to
+          all our clients, including startups and leading national and international
+          businesses and investment funds. By combining the strengths of our specialized
+          teams and members and making optimum use of all our networks, we provide our clients
+          with integrated services of the highest possible quality.
+        </p>
+        <hr>
+      </section>
+      <section class="section-team">
+        <div class="section-line"></div>
+        <h3>TEAM</h3>
+        <p>Different areas of expertise and back&shygrounds, but a single motivation:
+          to provide the best possible advice and representation in court and
+          out of court – committed, pragmatic, and effective.
+        </p>
+        <button class="meet-team-button button" type="button">
+          <p>Meet our team</p>
+          <img src="src/img/arrow-rifgt.png" alt="arrow">
+        </button>
+      </section>
+    </div>
   </div>
+  <footer>
+    <div class="footer-wrapper content-center">
+      <div class="footer-header-wrapper">
+        <a class="main-nav__logo" href="#">
+          <img src="src/img/mini_logo.png">
+        </a>
+        <p>Griph <span></span> Your first partner</p>
+      </div>
+      <div class="footer-adress-wrapper">
+        <address class="address-first">
+          <span>Amsterdam</span><br>
+          De Lairessestraat 117<br>
+          1075 HH<br>
+          T. +31 (0) 20 891 2701<br>
+          F. +31 (0) 20 891 2702<br>
+          <a href="mailto:">Email</a>
+        </address>
+        <address class="address-second">
+          <span>Rotterdam</span><br>
+          Westerkade 7C<br>
+          3016 CL Rotterdam<br>
+          T. +31 (0) 10 892 9600<br>
+          F. +31 (0) 10 892 9601<br>
+          <a href="mailto:">Email</a>
+        </address>
+        <div class="footer-social-wrapper">
+          <a href="https://twitter.com/">
+            <img src="src/img/twitter-s-logo.png">
+          </a>
+          <a href="https://linkedin.com/">
+            <img src="src/img/linkedin-s-logo.png">
+          </a>
+        </div>
+      </div>
+      <div class="copyryght">
+          <p>© 2016 Griph. All rights reserved</p>
+      </div>
 
+    </div>
+  </footer>
 
 
 </body>
