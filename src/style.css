@@ -504,10 +504,23 @@ footer {
 
   .footer-wrapper {
     align-items: center;
+    overflow: hidden;
   }
 
   .copyryght {
     justify-content: center;
+  }
+
+  .address-first,
+  .address-second,
+  .footer-social-wrapper {
+    margin: 0;
+  }
+
+  .footer-adress-wrapper {
+    padding: 27px 70px;
+    width: 100%;
+    justify-content: space-around;
   }
 }
 
@@ -601,17 +614,13 @@ footer {
     line-height: 20px;
   }
 
-  .address-first,
-  .address-second,
-  .footer-social-wrapper {
-    margin: 0;
-  }
-
   .footer-adress-wrapper {
     margin: 0;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: unset;
+    padding: 10px 40px;
   }
 
   .footer-header-wrapper {
