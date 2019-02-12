@@ -143,6 +143,10 @@ h3 {
   display: flex;
 }
 
+.main-nav-logo img {
+  width: 60px;
+}
+
 .main-nav-list {
   display: flex;
   align-items: center;
@@ -505,5 +509,139 @@ footer {
 
   .copyryght {
     justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .main-header {
+    height: 240px;
+  }
+
+  .header-down-arrow {
+    display: none;
+  }
+
+  .main-nav-logo img {
+    width: 20px;
+  }
+
+  .main-nav-list {
+    padding-left: 20px;
+  }
+
+  .main-nav {
+    left: 0;
+    margin: 0 25px;
+    top: 20px;
+  }
+
+  .header-section-greet {
+    margin-top: 70px;
+    left: 40px;
+  }
+
+  .header-section-greet p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .section-container-wrapper {
+    flex-direction: column;
+  }
+
+  .what-can-do {
+    margin: 0;
+    width: auto;
+    padding: 40px;
+    flex-grow: 1;
+  }
+
+  .what-can-do-header {
+    line-height: 23px;
+  }
+
+  .what-can-do-content {
+    font-size: 15px;
+    line-height: 26px;
+    padding-top: 25px;
+  }
+
+  .section-short-lines p,
+  .section-quality p,
+  .section-team p {
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+
+  .section-container-wrapper-with-bg {
+    background: none;
+    margin: 0;
+  }
+
+  .section-quality {
+    padding: 40px;
+    width: auto;
+    margin: 0;
+  }
+
+  .section-team {
+    padding: 40px;
+    width: auto;
+    margin: 0;
+  }
+
+  .meet-team-button {
+    width: 200px;
+    margin: 0 auto;
+    padding: 7px 22px 0px 22px;
+    margin-top: 30px;
+  }
+
+  .footer-adress-wrapper address {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .address-first,
+  .address-second,
+  .footer-social-wrapper {
+    margin: 0;
+  }
+
+  .footer-adress-wrapper {
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer-header-wrapper {
+    justify-content: space-around;
+  }
+
+  .section-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-short-lines {
+    padding: 40px;
+    width: auto;
+  }
+
+  .section-team p {
+    margin-bottom: 10px;
+  }
+
+  .footer-social-wrapper {
+    padding: 15px;
+    padding-top: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .footer-social-wrapper a{
+    padding: 0 15px;
   }
 }
